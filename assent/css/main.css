@@ -745,13 +745,19 @@ img {
 ==================== skills ====================
 */
 .skills {
-    padding: 5rem 0 2rem 0;
+    min-width: 100%;
+    padding: 5rem 4rem 7rem 4rem;
     background: #dde1e7;
-    min-height: 70vh;
 }
 
 .skills_header {
     text-align: center;
+}
+.skills_heading {
+    font-size: 4rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
 }
 
 .skills_body {
@@ -762,20 +768,40 @@ img {
 }
 
 .skills_card {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
     padding: 4rem 2rem;
     background: #dde1e7;
     box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
     border-radius: 5px;
+    transition: all .2s ease-in-out;
+}
+.skills_card:hover {
+    transform: scale(1.05);
+    background: #ffffff;
 }
 .skills_card i {
     font-size: 4rem;
-    color: #505050;
+    /* color: #000331; */
+    color: #ff4500;
 }
 .skills_card h3 {
-    font-size: 2.8rem;
-    font-weight: 5
-    00;
+    font-size: 2.5rem;
+    font-weight: 500;
     text-transform: capitalize;
+    color: #000331;
+}
+.skills_card .skills_list {
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 2;
+    margin-left: 2rem;
+}
+.skills_list li {
+    list-style: disc;
+}
+.skills_list ul {
+    margin-left: 2rem;
 }
