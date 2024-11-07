@@ -200,7 +200,7 @@ img {
 /*
 ==================== main container ====================
 */
-.main_container {
+.max_width {
     max-width: 140rem;
     margin-inline: auto;
 }
@@ -214,7 +214,11 @@ img {
     /* gap: 2rem; */
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
-    background-color: #000331;
+    /* background-color: #000331; */
+}
+
+.hero_main_section {
+    background: #000331;
 }
 
 .hero_columns {
@@ -223,9 +227,6 @@ img {
     justify-content: center;
 }
 
-.left_column {
-    /* animation: left_column 2s ease; */
-}
 
 @keyframes left_column {
     0% {
@@ -399,13 +400,16 @@ img {
 /*
 ==================== about us ====================
 */
+.about_us {
+    background: var(--primary-color);
+}
+
 .about_us .about_us_content {
     display: grid;
     justify-content: center;
     gap: 5rem;
     grid-template-columns: repeat(2, 1fr);
     padding: 6rem 2rem;
-    /* background: #fffacd; */
     overflow: hidden;
 }
 
@@ -487,9 +491,12 @@ img {
 /*
 ==================== contact us ====================
 */
+.contact_us {
+    background: #dfe1ff96;
+}
+
 .contact_section {
     padding: 6rem 0;
-    background: #dfe1ff96;
 }
 
 .contact_header {
@@ -710,9 +717,12 @@ img {
 /*
 ==================== recent_work ====================
 */
-.recent_work {
+.recent_work_section {
     min-height: 70vh;
     background: #fff;
+}
+
+.recent_work {
     padding: 2rem 2rem 5rem 2rem;
 }
 
@@ -729,6 +739,8 @@ img {
 }
 
 .recent_discription {
+    max-width: 60rem;
+    margin-inline: auto;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.5;
@@ -795,10 +807,12 @@ img {
 /*
 ==================== skills ====================
 */
-.skills {
-    min-width: 100%;
-    padding: 5rem 7rem 7rem 7rem;
+.skills_section {
     background: #dde1e7;
+}
+
+.skills {
+    padding: 5rem 7rem 7rem 7rem;
 }
 @media screen and (max-width:768px) {
     .skills {
