@@ -771,6 +771,11 @@ img {
     padding: 2rem;
     border-radius: 5px;
     box-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8rem;
+    position: relative;
 }
 
 .project_card .card_img img {
@@ -782,26 +787,25 @@ img {
 }
 
 .project_card .project_card_btn {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin-top: 6rem;
-    margin-bottom: .5rem;
+ background: transparent;
+ margin-bottom: .4rem;
 }
 
 .project_card .project_card_btn a {
-    font-size: 1.7rem;
-    font-weight: 500;
-    color: #000331;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fefefe;
     text-transform: capitalize;
-    background: #fefefe;
+    background: #ff4500;
     padding: .7rem 1.5rem;
     border-radius: 4px;
-    transition: opacity .2s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 .project_card .project_card_btn a:hover {
-    opacity: .7;
+    background: #fefefe;
+    color: #ff4500;
+    font-weight: 500;
 }
 
 /*
@@ -832,9 +836,9 @@ img {
 
 .skills_body {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 3.3rem;
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
 }
 
 .skills_card {
