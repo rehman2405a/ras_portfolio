@@ -189,6 +189,7 @@ img {
     max-width: 140rem;
     margin-inline: auto;
 }
+
 /*
 ==================== hero page ====================
 */
@@ -778,7 +779,7 @@ img {
 }
 
 .footer_nav h2 {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     font-weight: 500;
     white-space: nowrap;
     color: #000331;
@@ -791,7 +792,7 @@ img {
 }
 
 .footer_nav .list .item a {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 400;
     text-transform: capitalize;
     color: #000331;
@@ -842,4 +843,25 @@ img {
     color: #ff4500;
 }
 
+/*
+==================== animation ====================
+*/
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: translate(0, 3rem);
+    }
+    100% {
+        opacity: 1;
+        transform:  translate(0, 0);
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+    .in-view {
+        animation: fade .9s .9s both;
+    }
 
+    .not-in-view {
+        opacity: 0;
+    }
+}
