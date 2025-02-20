@@ -580,8 +580,26 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 8rem;
+    gap: 4rem;
     position: relative;
+}
+
+.recent_body .project_card h1,
+.recent_body .project_card p {
+    color: #fefefe;
+}
+
+.recent_body .project_card h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1.4rem;
+}
+
+.recent_body .project_card p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.4;
+    opacity: .8;
 }
 
 .project_card .card_img img {
@@ -595,6 +613,9 @@ img {
 .project_card .project_card_btn {
  background: transparent;
  margin-bottom: .4rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
 }
 
 .project_card .project_card_btn a {
@@ -612,6 +633,12 @@ img {
     background: #fefefe;
     color: #ff4500;
     font-weight: 500;
+}
+
+.project_card .project_card_btn p {
+    color: #ffffff;
+    font-weight: 400;
+    cursor: pointer;
 }
 
 /*
